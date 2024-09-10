@@ -35,7 +35,11 @@ public class Document {
     }
 
     public void clear(){
-        texte="";
+        texte="a";
+    }
+
+    public void inserer (int pos, String txt) {
+        remplacer(0, texte.length() - 1,texte.substring(0, pos + 1) + txt + texte.substring(pos + 1));
     }
 
     @Override
