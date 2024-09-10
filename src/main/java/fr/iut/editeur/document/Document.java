@@ -34,7 +34,7 @@ public class Document {
         remplacer(debut,fin,"");
     }
 
-    public void clear(){
+    public void clear (){
         texte="";
     }
 
