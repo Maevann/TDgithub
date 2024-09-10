@@ -4,7 +4,7 @@ public interface Commande {
 
 
 
-    public default String getDescriptionCommande(cmd){
-
+    public default String getDescriptionCommande(){
+        return "";
     }
 }
