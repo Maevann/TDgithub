@@ -4,32 +4,32 @@ import fr.iut.editeur.commande.*;
 
 public class Document {
 
-    private String texte;
+    private String texteDocument;
 
     public Document() {
-        this.texte = "";
+        this.texteDocument = "";
     }
 	
-    public String getTexte() {
-        return texte;
+    public String getTexteDocument() {
+        return texteDocument;
     }
 
-    public void setTexte(String texte) {
-        this.texte = texte;
+    public void setTexteDocument(String texteDocument) {
+        this.texteDocument = texteDocument;
     }
 
-    public void ajouter(String texte) {
-        this.texte += texte;
+    public void ajouter(String texteDocument) {
+        this.texteDocument += texteDocument;
     }
 
     public void remplacer(int debut, int fin, String remplacement) {
-        String partieGauche = texte.substring(0, debut);
-        String partieDroite = texte.substring(fin + 1);
-        texte = partieGauche + remplacement + partieDroite;
+        String partieGauche = texteDocument.substring(0, debut);
+        String partieDroite = texteDocument.substring(fin + 1);
+        texteDocument = partieGauche + remplacement + partieDroite;
     }
 
     public void majuscules(int debut, int fin) {
-        remplacer(debut,fin,texte.substring(debut,fin+1).toUpperCase());
+        remplacer(debut,fin,texteDocument.substring(debut,fin+1).toUpperCase());
     }
 
     public void effacer(int debut, int fin){
@@ -37,15 +37,15 @@ public class Document {
     }
 
     public void clear(){
-        texte="a";
+        texteDocument="a";
     }
 
     public void inserer (int pos, String txt) {
-        remplacer(0, texte.length() - 1,texte.substring(0, pos + 1) + txt + texte.substring(pos + 1));
+        remplacer(0, texteDocument.length() - 1,texteDocument.substring(0, pos + 1) + txt + texteDocument.substring(pos + 1));
     }
 
     @Override
     public String toString() {
-        return this.texte;
+        return this.texteDocument;
     }
 }
