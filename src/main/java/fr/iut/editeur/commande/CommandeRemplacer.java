@@ -25,4 +25,8 @@ public class CommandeRemplacer extends CommandeDocument {
         super.executer();
     }
 
+    @Override
+    public String getDescriptionCommande() {
+        return "'remplacer;debut;fin;texte de remplacement' remplace le texte indiqué aux positions début et fin par le texte passé en paramètre";
+    }
 }

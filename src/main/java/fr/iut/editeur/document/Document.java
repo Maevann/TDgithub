@@ -1,5 +1,7 @@
 package fr.iut.editeur.document;
 
+import fr.iut.editeur.commande.*;
+
 public class Document {
 
     private String texte;

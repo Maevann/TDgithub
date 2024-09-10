@@ -21,4 +21,8 @@ public class CommandeMajuscule extends CommandeDocument {
         super.executer();
     }
 
+    @Override
+    public String getDescriptionCommande() {
+        return "'majuscules;debut;fin' met en majuscules le texte indiqué aux positions début et fin";
+    }
 }

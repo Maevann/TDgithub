@@ -20,4 +20,8 @@ public class CommandeAjouter extends CommandeDocument {
         super.executer();
     }
 
+    @Override
+    public String getDescriptionCommande() {
+        return "'ajouter;texte a ajouter' ajoute le texte en paramètre à la fin de votre texte actuel";
+    }
 }

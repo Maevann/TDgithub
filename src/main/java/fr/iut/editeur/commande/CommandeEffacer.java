@@ -21,4 +21,8 @@ public class CommandeEffacer extends CommandeDocument {
         super.executer();
     }
 
+    @Override
+    public String getDescriptionCommande() {
+        return "'effacer;debut;fin' supprime le texte indiqué aux positions début et fin";
+    }
 }
