@@ -19,4 +19,8 @@ public class CommandeClear extends CommandeDocument {
         super.executer();
     }
 
+    @Override
+    public String getDescriptionCommande() {
+        return "'clear' efface complètement votre texte";
+    }
 }

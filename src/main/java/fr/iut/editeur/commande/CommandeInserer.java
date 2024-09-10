@@ -17,4 +17,9 @@ public class CommandeInserer extends CommandeDocument {
         this.document.inserer(pos, texte);
         super.executer();
     }
+
+    @Override
+    public String getDescriptionCommande() {
+        return "'inserer;pos;texte a inserer' insère le texte passé en paramètre à partir de la position donnée";
+    }
 }
