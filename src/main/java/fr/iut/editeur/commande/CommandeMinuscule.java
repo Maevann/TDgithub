@@ -16,7 +16,7 @@ public class CommandeMinuscule extends CommandeDocument {
         }
         int debut = Integer.parseInt(parameters[1]);
         int fin = Integer.parseInt(parameters[2]);
-        this.document.remplacer(debut,fin,document.getTexte().substring(debut,fin + 1).toLowerCase());
+        this.document.remplacer(debut,fin,document.getTexteDocument().substring(debut,fin + 1).toLowerCase());
         super.executer();
     }
 
