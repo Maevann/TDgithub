@@ -22,6 +22,6 @@ public class CommandeMinuscule extends CommandeDocument {
 
     @Override
     public String getDescriptionCommande() {
-        return super.getDescriptionCommande();
+        return "'minuscule;debut;fin' met en minuscule le texte indiqué aux positions début et fin";
     }
 }
